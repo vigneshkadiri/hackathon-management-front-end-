@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="juryreview.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="registration.html">Team Registration</a>
+        <a href="mentor-registration.html">Mentor Registration</a>
+        <a href="ideavoting.html">Idea Voting</a>
+        <a href="teamchat.html">Internal Chat</a>
+        <a href="checkpoint.html">Checkpoint Submission</a>
+        <a href="juryreview.html">Jury Reviews</a>
+        <a href="timer.html">Hackathon Timer</a>
+    </div>
+    <div class="container">
+        
+    <h2>Jury Review Form</h2>
+    
+    <form id="juryReviewForm">
+        <label for="teamName">Team Name:</label><br>
+        <input type="text" id="teamName" name="teamName" required><br><br>
+
+        <label for="teamIdea">Team Idea:</label><br>
+        <textarea id="teamIdea" name="teamIdea" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="teamRating">Team Rating (out of 10):</label><br>
+        <input type="number" id="teamRating" name="teamRating" min="0" max="10" required><br><br>
+
+        <label for="suggestions">Suggestions for Implementation:</label><br>
+        <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit Review">
+    </form>
+    </div>
+
+</body>
+
+</html>

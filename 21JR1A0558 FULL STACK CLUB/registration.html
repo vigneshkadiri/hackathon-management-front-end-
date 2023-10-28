@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hackathon Management System</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="registration.html">Team Registration</a>
+        <a href="mentor-registration.html">Mentor Registration</a>
+        <a href="ideavoting.html">Idea Voting</a>
+        <a href="teamchat.html">Internal Chat</a>
+        <a href="checkpoint.html">Checkpoint Submission</a>
+        <a href="juryreview.html">Jury Reviews</a>
+        <a href="timer.html">Hackathon Timer</a>
+    </div>
+    <div class="container">
+    <!-- Team Registration Form -->
+    <section class="registration-form">
+        <h2>Team Registration</h2>
+        <form>
+    <table >
+        <tr>
+            <td>Team Name:</td>
+            <td><input type="text" name="teamName" required></td>
+        </tr>
+        <tr>
+            <td>Team Leader:</td>
+            <td><input type="text" name="teamLeader" required></td>
+        </tr>
+        <tr>
+            <td>Member 1:</td>
+            <td><input type="text" name="member1" required></td>
+        </tr>
+        <tr>
+            <td>Member 2:</td>
+            <td><input type="text" name="member2" required ></td>
+        </tr>
+        <tr>
+            <td>Member 3:</td>
+            <td><input type="text" name="member3" required></td>
+        </tr>
+        <tr>
+            <td>Member 4:</td>
+            <td><input type="text" name="member4" required></td>
+        </tr>
+        <tr>
+            <td>Member 5:</td>
+            <td><input type="text" name="member5" required></td>
+        </tr>
+        <!-- Add more rows for additional team members if necessary -->
+        <tr>
+            <td colspan="2" style="text-align:center;"><input type="submit" value="Submit"></td>
+        </tr>
+
+        </form>
+    </section>
+    <script>
+        function changeColor() {
+          var letters = '0123456789ABCDEF';
+          var color = '#';
+          for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+          }
+          document.querySelector('.box-shawdow').style.backgroundColor = color;
+        }
+        changeColor();
+     </script>
+    </div>  
+   
+</body>
+
+</html>

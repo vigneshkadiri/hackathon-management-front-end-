@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('https://rare-gallery.com/mocahbig/60097-Abstract-Glass-4k-Ultra-HD-Wallpaper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  button {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 25px;
+    &:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        transition: background-color 0.3s, color 0.3s;
+     }
+}
+  
+
+
+.container {
+    height: 300px;
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 70px;
+    border-radius: 5px;
+    margin: 125px auto;
+    
+    box-shadow: 
+    0 16px 16px rgba(0, 0, 0, 0.3),
+    0 16px 16px rgba(0, 0, 0, 0.3),
+    0 8px 8px rgba(0, 0, 0, 0.5),
+    0 16px 16px rgba(0, 0, 0, 0.3);
+    
+    background-image: url('https://www.hdwallpapers.in/download/white_wallpaper_5_4k_hd_white-1080x1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #000000;
+    border-radius: 40px;
+    align-items: flex-end;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 36px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #b950ff;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+
+/*36hrs timer*/
+
+#timer {
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+}
+
+#clock {
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    font-size: 30px;
+}

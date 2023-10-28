@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Chat Page </title>
+    <link rel="stylesheet" href="chat.css">
+    <style>
+      
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="registration.html">Team Registration</a>
+        <a href="mentor-registration.html">Mentor Registration</a>
+        <a href="ideavoting.html">Idea Voting</a>
+        <a href="teamchat.html">Internal Chat</a>
+        <a href="checkpoint.html">Checkpoint Submission</a>
+        <a href="juryreview.html">Jury Reviews</a>
+        <a href="timer.html">Hackathon Timer</a>
+    </div>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3>Team Chat</h3>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="message received">Hello, everyone!</div>
+            <div class="message sent">Hi there!</div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="message-input" placeholder="Type your message here..." onkeydown="handleKeyDown(event)"><br><br>
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        function sendMessage() {
+            var messageInput = document.getElementById('message-input');
+            var chatBody = document.getElementById('chat-body');
+            var message = messageInput.value.trim();
+
+            if (message !== '') {
+                var newMessage = document.createElement('div');
+                newMessage.classList.add('message', 'sent');
+                newMessage.textContent = message;
+                chatBody.appendChild(newMessage);
+                messageInput.value = '';
+            }
+        }
+        function handleKeyDown(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+    </script>
+</body>
+</html>

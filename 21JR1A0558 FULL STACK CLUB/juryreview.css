@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    border: #000000;
+    background-image: url('https://rare-gallery.com/mocahbig/60097-Abstract-Glass-4k-Ultra-HD-Wallpaper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h2{
+    text-align: center;
+}
+.container {
+    width: 400px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 40px auto;
+    align-items: center;
+    
+    box-shadow: 
+    0 16px 16px rgba(0, 0, 0, 0.3),
+    0 16px 16px rgba(0, 0, 0, 0.3),
+    0 8px 8px rgba(0, 0, 0, 0.5),
+    0 16px 16px rgba(0, 0, 0, 0.3);
+    
+    background-image: url('https://www.hdwallpapers.in/download/white_wallpaper_5_4k_hd_white-1080x1920.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    border: #000000;
+    border-radius: 25px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 25px;
+    &:hover {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        transition: background-color 0.3s, color 0.3s;
+     }
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #000000;
+    border-radius: 40px;
+    align-items: flex-end;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 36.33px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #b950ff;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+}

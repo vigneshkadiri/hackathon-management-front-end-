@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="ideavoting.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="registration.html">Team Registration</a>
+        <a href="mentor-registration.html">Mentor Registration</a>
+        <a href="ideavoting.html">Idea Voting</a>
+        <a href="teamchat.html">Internal Chat</a>
+        <a href="checkpoint.html">Checkpoint Submission</a>
+        <a href="juryreview.html">Jury Reviews</a>
+        <a href="timer.html">Hackathon Timer</a>
+    </div>
+    <div class="container">
+    <h2>College Hackathon Idea Voting Page</h2>
+
+    <div class="voting-table">
+        <table>
+            <tr>
+                <th>Team Name</th>
+                <th>Idea Description</th>
+                <th>Voting for the Idea</th>
+            </tr>
+            <tr>
+                <td>Team A</td>
+                <td>A mobile app for waste management</td>
+                <td><button onclick="vote('teamA')">Vote for Team A</button></td>
+            </tr>
+            <tr>
+                <td>Team B</td>
+                <td>A mobile app for waste management</td>
+                <td><button onclick="vote('teamA')">Vote for Team B</button></td>
+            </tr>
+            <tr>
+                <td>Team C</td>
+                <td>An AI-powered educational platform</td>
+                <td><button onclick="vote('teamB')">Vote for Team C</button></td>
+            </tr>
+            <tr>
+                <td>Team D</td>
+                <td>An AI-powered educational platform</td>
+                <td><button onclick="vote('teamB')">Vote for Team D</button></td>
+            </tr>
+            <tr>
+                <td>Team E</td>
+                <td>An AI-powered educational platform</td>
+                <td><button onclick="vote('teamB')">Vote for Team E</button></td>
+            </tr>
+            <!-- Add more teams and their idea descriptions and voting buttons as needed -->
+        </table>
+    </div>
+</div>
+
+    <script>
+        function vote(team) {
+            // You can implement the logic for voting here
+            alert("You have voted for " + team);
+        }
+    </script>
+
+</body>
+
+</html>

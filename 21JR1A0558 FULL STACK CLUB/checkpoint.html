@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Checkpoint Submission Form</title>
+    <link rel="stylesheet" href="checkpiont.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="registration.html">Team Registration</a>
+        <a href="mentor-registration.html">Mentor Registration</a>
+        <a href="ideavoting.html">Idea Voting</a>
+        <a href="teamchat.html">Internal Chat</a>
+        <a href="checkpoint.html">Checkpoint Submission</a>
+        <a href="juryreview.html">Jury Reviews</a>
+        <a href="timer.html">Hackathon Timer</a>
+    </div>
+    <div class="container">
+        <h2>Checkpoint Submission Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="teamName">Team Name:</label>
+                <input type="text" id="teamName" name="teamName" required>
+            </div>
+            <div class="form-group">
+                <label for="checkpointNumber">Checkpoint Number:</label>
+                <input type="number" id="checkpointNumber" name="checkpointNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

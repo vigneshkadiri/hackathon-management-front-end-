@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://wallpapercave.com/wp/wp9109383.jpg');
+    background-repeat: no-repeat;
+    background-size: 1370px 700px;
+}
+h1.button-like {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0a0a0a;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button-container {
+    text-align: center;
+}
+
+h1.button-like:hover {
+    background-color: #ffffff;
+    color: #000000;
+    
+}
+
+h1.button-like:active {
+    background-color: #ffab4c;
+    
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #000000;
+    border-radius: 40px;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 36px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #b950ff;
+    color: rgb(255, 255, 255);
+    border-radius: 25px;
+}
+
+#frame-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 280px;
+    width: 1340px;
+}
+#frame-second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 280px;
+    width: 1340px;
+
+}
+
+.frame {
+    width: 120px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    background-position: center;
+    border-radius: 25px;
+    &:hover {
+        background-color: rgb(255, 128, 128);
+        color: rgb(0, 0, 0);
+        transition: background-color 0.1s, color 0.8s;
+     }
+}
+
+/* unvisited link */
+a:link {
+    color: green;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(0, 0, 0);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  /* selected link */
+  a:active {
+    color: rgb(255, 127, 127);
+  }
